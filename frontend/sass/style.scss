@@ -1,0 +1,318 @@
+@import "partials/variable";
+%mychange {
+  display: inline-block !important;
+  color: $secondColor;
+  background-color: $thirdColor !important;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 5px;
+  i {
+    font-size: 25px;
+    line-height: 60px;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// a{
+//     text-decoration: none;
+//     color: $firstColor ;
+//     &:hover{
+
+//         text-decoration: none;
+//         color: $firstColor;
+//     }
+// }
+.preloader {
+  ul {
+    li {
+      list-style-type: none;
+      margin-left: 15px;
+      color: red;
+    }
+  }
+}
+
+.carousel-item {
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 3s ease-in-out;
+    animation: zoom 20s;
+  }
+  @keyframes zoom {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.5, 1.5);
+    }
+  }
+
+  .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.408);
+
+    .text {
+      margin-top: 150px;
+      height: 400px;
+      padding: 50px;
+      h4 {
+        color: $secondColor;
+        font-size: 22px;
+        animation-delay: 1s;
+        animation: down;
+
+        @keyframes down {
+          0% {
+            right: 0px;
+          }
+
+          100% {
+            right: 40%;
+          }
+        }
+      }
+      h2 {
+        font-size: 60px;
+
+        strong {
+          display: block;
+        }
+
+        color: $secondColor;
+      }
+      .myBtn {
+        display: inline-block !important;
+        color: $secondColor;
+        background-color: $thirdColor !important;
+        height: 60px;
+        width: 20%;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 5px;
+        i {
+          font-size: 25px;
+          line-height: 60px;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    // .showzoom{
+    //     // transform: scale(1.4);
+
+    // }
+  }
+}
+
+#service {
+    
+  position: relative;
+    
+  background-color: $gray-color;
+ .shape-bottom{
+
+    img{
+        position: absolute;
+        right: 0;
+        width: 100%;
+        opacity: 0.1;
+        bottom: 0;
+    }
+  
+ }
+
+  .shape {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.1;
+    z-index: 1;
+  }
+
+  .range {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    .col-lg-6 {
+      .img-shape {
+        z-index: 1;
+        position: relative;
+        .modalIntro {
+          position: absolute;
+          height: 200px;
+          width: 440px;
+
+          background-color: white;
+          right: -50px;
+          bottom: -50px;
+          z-index: 1;
+          // padding: 50px;
+          .video {
+            a {
+              text-align: center;
+              line-height: 40px;
+              @extend %mychange;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    .col-lg-6 {
+      padding-left: 75px;
+      h5 {
+        color: $thirdColor;
+      }
+
+      p {
+        text-align: justify;
+        margin-bottom: 40px;
+      }
+
+      ul {
+        li {
+          margin-bottom: 80px;
+          list-style-type: none;
+
+          i {
+            font-size: 50px;
+            color: $thirdColor;
+          }
+
+          a {
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: 700;
+            color: black;
+
+            &:hover {
+              color: black;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .myButton {
+        line-height: 50px;
+        color: white;
+
+        border-radius: 5px;
+        background-color: $thirdColor;
+        padding: 25px 15px;
+
+        &:hover {
+          color: white;
+          text-decoration: none;
+        }
+        i {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .text-content {
+    hr {
+      width: 40px;
+      background-color: $thirdColor;
+      height: 1px;
+    }
+  }
+  .owl-carousel {
+      user-select: none;
+    .owl-dots {
+      .active {
+        position: relative;
+        z-index: 0;
+
+        &::after {
+
+            content: "";
+          height: 5px;
+          width: 5px;
+          background-color:$thirdColor;
+          position: absolute;
+          z-index: 1;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          border-radius: 50%;
+        }
+      }
+      .owl-dot {
+          &:focus{
+              outline: none;
+
+          }
+
+        span{
+            background-color: white !important;
+
+            // display: block;
+            height: 20px;
+            width: 20px;
+            border: 2px solid #cccccc;
+            border-radius: 50%;
+            margin: 5px;
+        }
+       
+      }
+    }
+    .item {
+      padding: 15px;
+      background-color: white;
+      position: relative;
+      overflow: hidden;
+
+      &::after{
+        content: "";
+        position: absolute;
+        right: -50px;
+        bottom: -80px;
+        height: 150px;
+        width: 150px;
+        background: url("../img/shape/shape2.png");
+        background-size: contain;
+        z-index: 1;
+        background-repeat: no-repeat;
+        transform: rotate(-45deg);
+        opacity: 0.3;;
+
+      }
+      .image {
+        margin-bottom: 20px;
+      }
+      .info {
+        .myButton {
+          background-color: $thirdColor;
+
+          width: 50px;
+          height: 50px;
+          border-radius: 50px;
+          text-align: center;
+          line-height: 50px;
+          a {
+            i {
+              color: white;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

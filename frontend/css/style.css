@@ -1,0 +1,287 @@
+#service .range .col-lg-6 .img-shape .modalIntro .video a {
+  display: inline-block !important;
+  color: #ffffff;
+  background-color: #1ebeb6 !important;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#service .range .col-lg-6 .img-shape .modalIntro .video a i {
+  font-size: 25px;
+  line-height: 60px;
+}
+
+#service .range .col-lg-6 .img-shape .modalIntro .video a:hover {
+  text-decoration: none;
+}
+
+.preloader ul li {
+  list-style-type: none;
+  margin-left: 15px;
+  color: red;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 3s ease-in-out;
+  animation: zoom 20s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+.carousel-item .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.408);
+}
+
+.carousel-item .layer .text {
+  margin-top: 150px;
+  height: 400px;
+  padding: 50px;
+}
+
+.carousel-item .layer .text h4 {
+  color: #ffffff;
+  font-size: 22px;
+  animation-delay: 1s;
+  animation: down;
+}
+
+@keyframes down {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: 40%;
+  }
+}
+
+.carousel-item .layer .text h2 {
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.carousel-item .layer .text h2 strong {
+  display: block;
+}
+
+.carousel-item .layer .text .myBtn {
+  display: inline-block !important;
+  color: #ffffff;
+  background-color: #1ebeb6 !important;
+  height: 60px;
+  width: 20%;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.carousel-item .layer .text .myBtn i {
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.carousel-item .layer .text .myBtn:hover {
+  text-decoration: none;
+}
+
+#service {
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+#service .shape-bottom img {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  opacity: 0.1;
+  bottom: 0;
+}
+
+#service .shape {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+#service .range {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+#service .range .col-lg-6 .img-shape {
+  z-index: 1;
+  position: relative;
+}
+
+#service .range .col-lg-6 .img-shape .modalIntro {
+  position: absolute;
+  height: 200px;
+  width: 440px;
+  background-color: white;
+  right: -50px;
+  bottom: -50px;
+  z-index: 1;
+}
+
+#service .range .col-lg-6 .img-shape .modalIntro .video a {
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+#service .range .col-lg-6 {
+  padding-left: 75px;
+}
+
+#service .range .col-lg-6 h5 {
+  color: #1ebeb6;
+}
+
+#service .range .col-lg-6 p {
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+#service .range .col-lg-6 ul li {
+  margin-bottom: 80px;
+  list-style-type: none;
+}
+
+#service .range .col-lg-6 ul li i {
+  font-size: 50px;
+  color: #1ebeb6;
+}
+
+#service .range .col-lg-6 ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+
+#service .range .col-lg-6 ul li a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#service .range .col-lg-6 .myButton {
+  line-height: 50px;
+  color: white;
+  border-radius: 5px;
+  background-color: #1ebeb6;
+  padding: 25px 15px;
+}
+
+#service .range .col-lg-6 .myButton:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#service .range .col-lg-6 .myButton i {
+  font-size: 30px;
+}
+
+#service .text-content hr {
+  width: 40px;
+  background-color: #1ebeb6;
+  height: 1px;
+}
+
+#service .owl-carousel {
+  user-select: none;
+}
+
+#service .owl-carousel .owl-dots .active {
+  position: relative;
+  z-index: 0;
+}
+
+#service .owl-carousel .owl-dots .active::after {
+  content: "";
+  height: 5px;
+  width: 5px;
+  background-color: #1ebeb6;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+#service .owl-carousel .owl-dots .owl-dot:focus {
+  outline: none;
+}
+
+#service .owl-carousel .owl-dots .owl-dot span {
+  background-color: white !important;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #cccccc;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+#service .owl-carousel .item {
+  padding: 15px;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+#service .owl-carousel .item::after {
+  content: "";
+  position: absolute;
+  right: -50px;
+  bottom: -80px;
+  height: 150px;
+  width: 150px;
+  background: url("../img/shape/shape2.png");
+  background-size: contain;
+  z-index: 1;
+  background-repeat: no-repeat;
+  transform: rotate(-45deg);
+  opacity: 0.3;
+}
+
+#service .owl-carousel .item .image {
+  margin-bottom: 20px;
+}
+
+#service .owl-carousel .item .info .myButton {
+  background-color: #1ebeb6;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+#service .owl-carousel .item .info .myButton a i {
+  color: white;
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */
